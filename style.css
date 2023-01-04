@@ -89,7 +89,7 @@ header{
 /* Heroo */
 
 .main {
-    padding: 70px 35px;
+    padding: 150px 35px 35px 0px;
     /* background: var(--background); */
     background: #040325;
     background: -webkit-linear-gradient(top left, #040325, #045070);
@@ -101,6 +101,7 @@ header{
     justify-content: center;
     color: white;
     width: 100%;
+    /* gap: 100px; */
 }
 
 #hero {
@@ -135,6 +136,7 @@ header{
 }
 
 .hero-text span {
+    font-size: 53px;
     background: #FDBDFF;
     background: -webkit-linear-gradient(top left, #FDBDFF, #391CAD);
     background: -moz-linear-gradient(top left, #FDBDFF, #391CAD);
@@ -163,16 +165,16 @@ header{
 /* Hero description */
   
 .hero-description-text {
-    padding: 70px 0px;
+    padding: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .hero-description-text h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -181,7 +183,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 18px;
 }
 
 
@@ -190,7 +192,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    gap: 16px;
     text-align: center;
 }
 
@@ -208,6 +210,73 @@ header{
     height: 80px;
 }
 
+/* Seccion SOMOS VANTA */
+
+.somos-vanta {
+    padding: 190px;
+    width: 1554px;
+    background: #4BFAF9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.somos h2 {
+    font-size: 100px;
+    color: var(--secondary);
+    /* background: #FDBDFF;
+    background: -webkit-linear-gradient(top left, #FDBDFF, #391CAD);
+    background: -moz-linear-gradient(top left, #FDBDFF, #391CAD);
+    background: linear-gradient(to bottom right, #FDBDFF, #391CAD);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; */
+}
+
+/* Seccion 2 SOMOS VANTA */
+
+
+.make-container {
+    width: 1554px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary);
+}
+
+.re-container2 {
+    padding: 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    /* box-shadow: 0px 1px 10px rgba(0,0,0,0.2); */
+    transition: all 400ms ease;
+}
+
+.container2 img {
+    width: 70px;
+    height: 70px;
+    filter: invert(83%) sepia(52%) saturate(1357%) hue-rotate(151deg) brightness(108%) contrast(96%);
+}
+
+.container2 h4 {
+    color: var(--text-white);
+    font-size: 18px;
+}
+
+.container2 p {
+    padding-left: 30px;
+    color: var(--text-gray);
+    font-size: 17px;
+}
+
+
+
+
+
 
 
 
@@ -222,7 +291,7 @@ header{
 
 .logo-vanta {
     animation-name: mov;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
 }
 
@@ -235,6 +304,7 @@ header{
     }
 }
 
+
 /* Animamos el logo en el heroo */
 
 .logo-hero {
@@ -245,16 +315,23 @@ header{
 
 @keyframes mov-hero {
     from {
-        transform: translateX(500px);
+        transform: translateX(300px);
     }
     to {
         transform: translateX(0px);
     }
 }
 
-/* Animamos las etiquetas a */
+/* Animamos las etiquetas a del HERO TOP*/
 
 .hero-text a:hover {
     background: var(--primary);
     transition: all 0.5s;
+}
+
+/* Animamos etiquetas a del HERO BOTTOM*/
+
+.container2 a:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-1%);
 }
