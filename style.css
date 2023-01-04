@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* Defino colores */
+:root{
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+  
+    /* text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+  
+    /* decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Navbar */
+
+header{
+    background: linear-gradient(to bottom, #045070) #040325 ;
+    box-shadow: 0px 0.5px 15px 0.5px #040325;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 25px;
+    position: fixed;
+    top: 0;
+    z-index: 2
+}
+
+
+.logo-vanta{
+    height: 60%;
+    margin: 0 30px;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.navbar{
+    gap: 70px;
+}
+.navbar-list{
+    gap: 25px;
+}
+
+.navbar-list a {
+    display: flex;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+
+.carrito-compras{
+    font-weight: 800;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px 6px 10px;
+    margin-right: 1rem;
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.navbar-list li:first-child > a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+/* Heroo */
+
+.main {
+    padding: 70px 35px;
+    /* background: var(--background); */
+    background: #040325;
+    background: -webkit-linear-gradient(top left, #040325, #045070);
+    background: -moz-linear-gradient(top left, #040325, #045070);
+    background: linear-gradient(to bottom right, #040325, #045070);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+#hero {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    width: 50%;
+    gap: 18px;
+}
+
+.hero-buttom {
+    display: flex;
+    gap: 15px;
+}
+
+#hero img {
+    width: 25%;
+    padding: 70px 20px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.hero-text span {
+    background: #FDBDFF;
+    background: -webkit-linear-gradient(top left, #FDBDFF, #391CAD);
+    background: -moz-linear-gradient(top left, #FDBDFF, #391CAD);
+    background: linear-gradient(to bottom right, #FDBDFF, #391CAD);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+.hero-text p {
+    color: var(--text-gray);
+    font-size: 16px;
+}
+
+.hero-text a {
+    background-color: var(--secondary);
+    color: var(--text-white);
+    width: 125px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* Hero description */
+  
+.hero-description-text {
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-description-text h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.contenedor-hero {
+    padding: 70px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    text-align: center;
+}
+
+.contenedor h5 {
+    font-size: 18px;
+}
+
+.contenedor p {
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.contenedor img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Animamos el logo en el navbar */
+
+.logo-vanta {
+    animation-name: mov;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mov {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+/* Animamos el logo en el heroo */
+
+.logo-hero {
+    animation-name: mov-hero;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes mov-hero {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+/* Animamos las etiquetas a */
+
+.hero-text a:hover {
+    background: var(--primary);
+    transition: all 0.5s;
+}
