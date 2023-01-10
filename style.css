@@ -33,7 +33,7 @@
 header{
     background: linear-gradient(to bottom, #045070) #040325 ;
     box-shadow: 0px 0.5px 15px 0.5px #040325;
-    border-radius: 10px;
+    border-radius: 2px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -89,7 +89,7 @@ header{
 /* Heroo */
 
 .main {
-    padding: 150px 35px 35px 0px;
+    padding: 150px 0px;
     /* background: var(--background); */
     background: #040325;
     background: -webkit-linear-gradient(top left, #040325, #045070);
@@ -214,7 +214,7 @@ header{
 
 .somos-vanta {
     padding: 190px;
-    width: 1554px;
+    width: 100%;
     background: #4BFAF9;
     display: flex;
     align-items: center;
@@ -237,7 +237,7 @@ header{
 
 
 .make-container {
-    width: 1554px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,17 +275,119 @@ header{
 
 
 
+/* Tercera SECTION */
+
+.confiabilidad {
+    padding: 190px;
+    width: 100%;
+    background: #4BFAF9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confi-container h2{
+    font-size: 100px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+/* Imagenes tercera SECTION */
+
+.productos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.first-section,
+.second-section {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+/* .first-producto figure {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.first-section figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.first-capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} */
 
 
+.producto figure {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 3px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+
+.producto figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 0 20px 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11,103,123,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-shadow: 1px 1px black;
+}
 
 
+/* Animamos los productos */ 
 
+.producto figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
 
+.producto figure:hover > img {
+    transform: scale(1.2);
+}
 
-
-
-
-
+.producto figure img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(255,255,255, 0), rgba(0,0,0,0.8));
+}
 
 /* Animamos el logo en el navbar */
 
