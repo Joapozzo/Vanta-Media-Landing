@@ -28,6 +28,13 @@
     list-style-type: none;
 }
 
+body {
+    background: #040325;
+    background: -webkit-linear-gradient(top left, #040325, #045070);
+    background: -moz-linear-gradient(top left, #040325, #045070);
+    background: linear-gradient(to bottom right, #040325, #045070);
+}
+
 /* Navbar */
 
 header{
@@ -90,18 +97,12 @@ header{
 
 .main {
     padding: 150px 0px;
-    /* background: var(--background); */
-    background: #040325;
-    background: -webkit-linear-gradient(top left, #040325, #045070);
-    background: -moz-linear-gradient(top left, #040325, #045070);
-    background: linear-gradient(to bottom right, #040325, #045070);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
     width: 100%;
-    /* gap: 100px; */
 }
 
 #hero {
@@ -309,31 +310,6 @@ header{
     height: 50%;
 }
 
-/* .first-producto figure {
-    position: relative;
-    width: 100%;
-    height: 750px;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.first-section figure img {
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
-.first-capa {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-} */
-
-
 .producto figure {
     position: relative;
     height: 100%;
@@ -366,6 +342,174 @@ header{
     visibility: hidden;
     text-shadow: 1px 1px black;
 }
+
+/* BOTON VER MAS */
+
+.section-proyectos {
+    padding: 150px 0 0 0;
+    
+}
+
+.div-proyectos a {
+    padding: 8px;
+    background: var(--secondary);
+    color: var(--text-white);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 500ms ease-out;
+}
+
+.div-proyectos a:hover {
+    background: var(--primary);
+    transition: all 500ms ease-out;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+.footer-container {
+    padding: 0 25px 50px;
+    display: flex;
+    padding-top: 100px;
+    border-top: 1px solid var(--text-gray);
+    justify-content: space-between;
+
+}
+
+/* FOOTER LEFT */
+
+.footer-left {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-left img {
+    width: 300px;
+    height: 300px;
+}
+
+.left-txt {
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    gap: 5px;
+}
+
+.left-txt h3 {
+    font-size: 35px;
+    background: rgb(62,147,224);
+    background: linear-gradient(90deg, rgba(62,147,224,1) 19%, rgba(197,25,215,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.left-txt p {
+    font-size: 18px;
+    color: var(--text-gray);
+}
+
+/* FOOTER RIGHT */
+
+.footer-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.right-top {
+    display: flex;
+    font-size: 18px;
+    color: var(--electric);
+}
+
+.right-bottom {
+    display: flex;
+    gap: 50px;
+}
+
+.right-bottom a {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.right-img-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-contacto {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-img {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.bottom-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.complement-img ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.terminos-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.terminos-txt ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-right h3 {
+    color: var(--bg-electric);
+}
+
+/* SEGUNDA SECTION (DERECHOS) */
+
+.section-derechos {
+    height: 50px;
+    width: 100%;
+    background: var(--btn-bg);
+}
+
+.div-derechos {
+    padding: 15px 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text-white);
+    font-size: 14px;
+}
+
+
+
+
+
 
 
 /* Animamos los productos */ 
