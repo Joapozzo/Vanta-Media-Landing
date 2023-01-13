@@ -156,9 +156,8 @@ header{
 .hero-text a {
     background-color: var(--secondary);
     color: var(--text-white);
-    width: 125px;
     text-align: center;
-    padding: 8px 0;
+    padding: 8px 15px;
     border-radius: 10px;
     font-size: 13px;
 }
@@ -253,7 +252,6 @@ header{
     flex-direction: column;
     gap: 20px;
     cursor: pointer;
-    /* box-shadow: 0px 1px 10px rgba(0,0,0,0.2); */
     transition: all 400ms ease;
 }
 
@@ -504,80 +502,4 @@ footer {
     align-items: center;
     color: var(--text-white);
     font-size: 14px;
-}
-
-
-
-
-
-
-
-/* Animamos los productos */ 
-
-.producto figure:hover > .capa {
-    opacity: 1;
-    visibility: visible;
-}
-
-.producto figure:hover > img {
-    transform: scale(1.2);
-}
-
-.producto figure img::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: linear-gradient(rgba(255,255,255, 0), rgba(0,0,0,0.8));
-}
-
-/* Animamos el logo en el navbar */
-
-.logo-vanta {
-    animation-name: mov;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes mov {
-    from {
-        transform: translateY(-300px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-}
-
-
-/* Animamos el logo en el heroo */
-
-.logo-hero {
-    animation-name: mov-hero;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes mov-hero {
-    from {
-        transform: translateX(300px);
-    }
-    to {
-        transform: translateX(0px);
-    }
-}
-
-/* Animamos las etiquetas a del HERO TOP*/
-
-.hero-text a:hover {
-    background: var(--primary);
-    transition: all 0.5s;
-}
-
-/* Animamos etiquetas a del HERO BOTTOM*/
-
-.container2 a:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-1%);
 }
