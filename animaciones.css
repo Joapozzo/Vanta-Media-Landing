@@ -1,3 +1,22 @@
+:root{
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+  
+    /* text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+  
+    /* decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+}
+
 /* KEY FRAMES */
 
 @keyframes fade {
@@ -40,6 +59,82 @@
     }
 }
 
+
+/* Animamos el logo en el navbar */
+
+.logo-vanta {
+    animation: fade 0.5s ease-in forwards, slide-down 0.7s ease-in-out;
+}
+
+/* Animamos las etiquetas A del navbar */
+
+.navbar-list li {
+    position: relative;
+    padding: 0;
+}
+
+.navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--text-white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+/* Animamos el logo en el heroo */
+
+.logo-hero {
+    animation: fade 0.8s ease-in forwards, slide-right 0.9s ease-in-out;
+}
+
+/* Animamos las etiquetas a del HERO TOP*/
+
+.hero-text a:hover {
+    background: var(--primary);
+    transform: all 0.15s ease;
+}
+
+.hero-text a {
+    animation: fade 0.5s ease-in forwards, slide-up 1s ease-in-out;
+}
+
+/* Animamos etiquetas a del HERO BOTTOM*/
+
+.container2 a:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-1%);
+}
+
+/* Animamos hero section 2 */
+
+.contenedor {
+    opacity: 0;
+    animation: fade 0.5s ease-in forwards, slide-up 1s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.contenedor:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.contenedor:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.contenedor:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
 /* Animamos los productos */ 
 .producto figure:hover > .capa {
     opacity: 1;
@@ -58,31 +153,4 @@
     top: 0;
     right: 0;
     background: linear-gradient(rgba(255,255,255, 0), rgba(0,0,0,0.8));
-}
-
-/* Animamos el logo en el navbar */
-
-.logo-vanta {
-    animation: fade 0.5s ease-in forwards, slide-down 0.7s ease-in-out;
-}
-
-
-/* Animamos el logo en el heroo */
-
-.logo-hero {
-    animation: fade 0.8s ease-in forwards, slide-right 0.9s ease-in-out;
-}
-
-/* Animamos las etiquetas a del HERO TOP*/
-
-.hero-text a:hover {
-    background: var(--primary);
-    transition: all 0.5s;
-}
-
-/* Animamos etiquetas a del HERO BOTTOM*/
-
-.container2 a:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-1%);
 }

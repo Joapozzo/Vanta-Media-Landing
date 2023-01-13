@@ -38,15 +38,16 @@ body {
 /* Navbar */
 
 header{
-    background: linear-gradient(to bottom, #045070) #040325 ;
-    box-shadow: 0px 0.5px 15px 0.5px #040325;
+    /* background-color: linear-gradient(to bottom, #045070) #040325 ; */
+    background: rgb(4,3,37);
+    background: linear-gradient(90deg, rgba(4,3,37,1) 19%, rgba(4,80,112,1) 100%);
     border-radius: 2px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    padding: 0px 25px;
+    padding: 0px 80px;
     position: fixed;
     top: 0;
     z-index: 2
@@ -78,15 +79,16 @@ header{
     font-size: 15px;
 }
 
-.carrito-compras{
+/* .cart-icon {
     font-weight: 800;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 30px;
     padding: 5px 10px 6px 10px;
     margin-right: 1rem;
     color: var(--text-white);
     cursor: pointer;
-}
+    font-size: 20px;
+} */
 
 .navbar-list li:first-child > a {
     color: var(--text-white);
